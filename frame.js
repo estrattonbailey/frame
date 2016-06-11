@@ -15,6 +15,6 @@ fs.copy(FROM, TO, (error) => {
   fs.renameSync(TO + '/gitignore', TO + '/.gitignore')
 })
 
-fs.copy('README.md', TO, (error) => {
-  if(error) return console.log(error)
+fs.copy(`${__dirname}/README.md`, TO, (error) => {
+  if(error) return console.log('ERROR',error)
 })
