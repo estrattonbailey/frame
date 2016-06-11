@@ -1,26 +1,26 @@
 {
-  "name": "@estrattonbailey/do",
+  "name": "@estrattonbailey/frame",
   "version": "0.0.1",
-  "description": "Sandbox.",
-  "main": "do.js",
+  "description": "A hyper-minimal JS/CSS/HTML boilerplate.",
+  "main": "frame.js",
   "scripts": {
     "update": "npm version patch && npm run pub",
     "pub": "npm publish --access=public"
   },
   "preferGlobal": "true",
   "bin": {
-    "do": "do.js"
+    "frame": "frame.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/estrattonbailey/do.git"
+    "url": "git+ssh://git@github.com/estrattonbailey/frame.git"
   },
   "author": "estrattonbailey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/estrattonbailey/do/issues"
+    "url": "https://github.com/estrattonbailey/frame/issues"
   },
-  "homepage": "https://github.com/estrattonbailey/do#readme",
+  "homepage": "https://github.com/estrattonbailey/frame#readme",
   "dependencies": {
     "fs-extra": "^0.30.0"
   }
