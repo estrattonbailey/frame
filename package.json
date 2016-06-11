@@ -1,6 +1,6 @@
 {
   "name": "@estrattonbailey/frame",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A hyper-minimal JS/CSS/HTML boilerplate.",
   "main": "frame.js",
   "scripts": {
