@@ -1,9 +1,10 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.1",
+  "name": "",
+  "version": "",
   "description": "",
-  "main": "package.json",
+  "main": "index.js",
   "scripts": {
+    "start": "parallelshell 'npm run js:dev' 'npm run css:dev' 'live-server'",
     "js:build": "browserify src/index.js --debug -p [minifyify --map index.js.map --output index.js.map] > index.js",
     "js:dev": "watchify src/index.js -v -d -o index.js",
     "css:build": "node-sass src/style.scss | postcss -u autoprefixer > style.css",
@@ -49,6 +50,7 @@
     "minifyify": "^7.3.3",
     "node-sass": "^3.7.0",
     "onchange": "^2.4.0",
+    "parallelshell": "^2.0.0",
     "postcss-cli": "^2.5.2",
     "watchify": "^3.7.0"
   },
