@@ -1,0 +1,56 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "package.json",
+  "scripts": {
+    "js:build": "browserify src/index.js --debug -p [minifyify --map index.js.map --output index.js.map] > index.js",
+    "js:dev": "watchify src/index.js -v -d -o index.js",
+    "css:build": "node-sass src/style.scss | postcss -u autoprefixer > style.css",
+    "css:dev": "onchange 'src/**/*.scss' -- npm run css:build"
+  },
+  "browserify": {
+    "debug": true,
+    "cache": {},
+    "packageCache": {},
+    "extension": [
+      "js"
+    ],
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "browserify-shim": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "exorcist": "^0.4.0",
+    "minifyify": "^7.3.3",
+    "node-sass": "^3.7.0",
+    "onchange": "^2.4.0",
+    "postcss-cli": "^2.5.2",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {}
+}

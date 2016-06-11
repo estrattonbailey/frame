@@ -1,0 +1,27 @@
+{
+  "name": "@estrattonbailey/do",
+  "version": "0.0.1",
+  "description": "Sandbox.",
+  "main": "do.js",
+  "scripts": {
+    "update": "npm version patch && npm run pub",
+    "pub": "npm publish --access=public"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "do": "do.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estrattonbailey/do.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/do/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/do#readme",
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  }
+}
