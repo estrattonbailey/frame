@@ -7,7 +7,7 @@
     "start": "parallelshell 'npm run js:dev' 'npm run css:dev' 'live-server'",
     "js:build": "browserify src/js/main.js --debug -p [minifyify --map main.js.map --output main.js.map] > main.js",
     "js:dev": "watchify src/js/main.js -v -d -o main.js",
-    "css:build": "node-sass src/scss/main.scss | postcss -u autoprefixer > scss/main.css",
+    "css:build": "node-sass src/scss/main.scss | postcss -u autoprefixer > main.css",
     "css:dev": "onchange 'src/scss/**/*.scss' -- npm run css:build"
   },
   "browserify": {
