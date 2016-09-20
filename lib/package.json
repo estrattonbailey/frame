@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parallelshell 'npm run js:dev' 'npm run css:dev' 'live-server'",
-    "js:build": "browserify src/index.js --debug -p [minifyify --map index.js.map --output index.js.map] > index.js",
-    "js:dev": "watchify src/index.js -v -d -o index.js",
-    "css:build": "node-sass src/style.scss | postcss -u autoprefixer > style.css",
-    "css:dev": "onchange 'src/**/*.scss' -- npm run css:build"
+    "js:build": "browserify src/js/main.js --debug -p [minifyify --map main.js.map --output main.js.map] > main.js",
+    "js:dev": "watchify src/js/main.js -v -d -o main.js",
+    "css:build": "node-sass src/scss/main.scss | postcss -u autoprefixer > scss/main.css",
+    "css:dev": "onchange 'src/scss/**/*.scss' -- npm run css:build"
   },
   "browserify": {
     "debug": true,
@@ -18,15 +18,7 @@
       "js"
     ],
     "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015",
-            "react"
-          ]
-        }
-      ]
+      "babelify"
     ]
   },
   "browserify-shim": {},
