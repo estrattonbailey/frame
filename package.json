@@ -1,16 +1,11 @@
 {
   "name": "@estrattonbailey/frame",
   "version": "0.1.0",
-  "description": "A hyper-minimal JS/CSS/HTML boilerplate.",
-  "main": "frame.js",
-  "scripts": {
-    "update": "npm version patch && npm run pub",
-    "pub": "npm publish --access=public"
-  },
-  "preferGlobal": "true",
+  "description": "Webpack + Standar and PostCSS boilerplate.",
   "bin": {
     "frame": "frame.js"
   },
+  "preferGlobal": "true",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/estrattonbailey/frame.git"

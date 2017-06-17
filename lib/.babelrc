@@ -1,7 +1,24 @@
 {
-  "presets": [
-    "es2015",
-    "react"
-  ]
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+      ],
+      "presets": [
+        "es2015",
+        "react"
+      ]
+    },
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+      ],
+      "presets": [
+        "es2015",
+        "react",
+      ]
+    }
+  }
 }
-
