@@ -1,6 +1,6 @@
 {
   "name": "@estrattonbailey/frame",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Webpack + Standar and PostCSS boilerplate.",
   "bin": {
     "frame": "frame.js"
