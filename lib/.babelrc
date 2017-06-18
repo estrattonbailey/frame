@@ -1,24 +1,14 @@
 {
-  "env": {
-    "production": {
-      "plugins": [
-        "transform-class-properties",
-        "transform-object-rest-spread"
-      ],
-      "presets": [
-        "es2015",
-        "react"
-      ]
-    },
-    "development": {
-      "plugins": [
-        "transform-class-properties",
-        "transform-object-rest-spread"
-      ],
-      "presets": [
-        "es2015",
-        "react",
-      ]
-    }
-  }
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    ['module-resolver', {
+      'root': ['.'],
+      'alias': {}
+    }]
+  ],
+  "presets": [
+    "es2015",
+    "react"
+  ]
 }
