@@ -2,14 +2,14 @@
   "name": "frame",
   "version": "0.0.1",
   "description": "",
-  "main": "app/index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "concurrently 'npm run watch:css' 'npm run serve'",
     "serve": "webpack-dev-server --open",
     "build": "npm run build:js && npm run build:css",
     "build:js": "NODE_ENV=production webpack --progress -p",
-    "build:css": "NODE_ENV=production postcss app/styles/main.css -o public/main.css",
-    "watch:css": "NODE_ENV=development postcss app/styles/main.css -w -o public/main.css"
+    "build:css": "NODE_ENV=production postcss src/styles/main.css -o static/main.css",
+    "watch:css": "NODE_ENV=development postcss src/styles/main.css -w -o static/main.css"
   },
   "author": "estrattonbailey",
   "license": "MIT",
@@ -35,5 +35,8 @@
     "standard-loader": "^6.0.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "svbstrate": "^4.1.1"
   }
 }
