@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/estrattonbailey/frame#readme",
   "dependencies": {
-    "fs-extra": "^0.30.0"
+    "fs-extra": "^8.0.1"
   }
 }
