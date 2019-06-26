@@ -1,6 +1,6 @@
 {
   "name": "@estrattonbailey/frame",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A tiny frontend boilerplate using Webpack + StandardJS and PostCSS.",
   "bin": {
     "frame": "frame.js"
