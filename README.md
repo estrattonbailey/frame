@@ -1,12 +1,18 @@
-# @estrattonbailey/frame
-A tiny frontend boilerplate using Webpack + StandardJS and PostCSS.
+# frame
+A bare-bones boilerplate.
 
-## Install
+## Features
+- ES2015 + async/await via Webpack
+- modern CSS with PostCSS
+- hot module reloading
+- base styles via [svbstrate](https://github.com/estrattonbailey/svbstrate)
+
+# Install
 ```
-npm i @estrattonbailey/frame -g
+npm i @estrattonbailey/frame@next -g
 ```
 
-## Usage
+# Usage
 ```
 frame init path/to/project
 
@@ -17,4 +23,5 @@ npm i
 npm start
 ```
 
-MIT License
+## License
+MIT License © [Eric Bailey](https://estrattonbailey.com)
